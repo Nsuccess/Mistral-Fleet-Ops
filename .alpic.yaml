@@ -1,0 +1,48 @@
+# ALPIC.ai deployment configuration for Mistral Le Chat
+# This file enables one-click deployment to ALPIC.ai
+
+name: mistral-fleet-ops
+description: MCP server for parallel cloud deployment to Blaxel sandboxes
+version: 1.0.0
+
+# Runtime configuration
+runtime:
+  type: python
+  version: "3.11"
+  entrypoint: main.py
+  
+# Required environment variables
+env:
+  required:
+    - BL_API_KEY
+    - BL_WORKSPACE
+  optional:
+    - MISTRAL_API_KEY
+    - QDRANT_URL
+    - QDRANT_API_KEY
+    - WANDB_API_KEY
+    - GITHUB_TOKEN
+    - WEAVE_DISABLED
+    - WANDB_DISABLED
+
+# Server configuration
+server:
+  port: 3000
+  transport: streamable-http
+  health_check: /healthz
+
+# Dependencies
+dependencies:
+  file: pyproject.toml
+  
+# MCP metadata
+mcp:
+  protocol_version: "1.0"
+  capabilities:
+    - tools
+    - resources
+  
+# Documentation
+docs:
+  readme: README.md
+  setup_guide: MISTRAL_SETUP.md

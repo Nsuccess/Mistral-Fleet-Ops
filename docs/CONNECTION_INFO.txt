@@ -1,0 +1,91 @@
+✅ MISTRAL FLEET OPS IS RUNNING!
+========================================
+
+🌐 Your ngrok Public URL:
+https://folksy-productively-delaine.ngrok-free.dev
+
+📍 Local Server:
+http://localhost:8000
+
+🔍 ngrok Web Interface:
+http://127.0.0.1:4040
+
+========================================
+CONNECT TO MISTRAL LE CHAT:
+========================================
+
+OFFICIAL STEPS (from Mistral Help Center):
+
+1. Open: https://chat.mistral.ai
+
+2. Click toggle panel button to reveal sidebar
+
+3. Expand "Intelligence" menu → Click "Connectors"
+
+4. Click "+ Add Connector" button (right side)
+
+5. Click "Custom MCP Connector" tab at top
+
+6. Fill in the form:
+   Connector Name: Mistral Fleet Ops
+   Connector Server: https://folksy-productively-delaine.ngrok-free.dev/mcp
+   Description: Manage Blaxel cloud sandboxes and deployments
+   Authentication Method: None
+
+7. Click "Connect" button
+
+8. Go back to main chat → Click "Tools" button
+
+9. Check the box next to "Mistral Fleet Ops"
+
+10. Try: "List my available tools"
+
+NOTE: 
+- MCP endpoint is at /mcp (not root)
+- You can also invoke by typing: /Mistral Fleet Ops
+- See MISTRAL_LECHAT_CONNECTION_GUIDE.md for full details
+
+========================================
+TEST COMMANDS:
+========================================
+
+"List all my Blaxel sandboxes"
+
+"Deploy https://github.com/Mistral-MCP-Hackathon-2025/mistral-jump.git to 2 sandboxes"
+
+"Verify all my deployment URLs are live"
+
+========================================
+STATUS:
+========================================
+
+✅ MCP Server: RUNNING (port 8000)
+✅ ngrok Tunnel: RUNNING (with host header fix)
+✅ Public URL: https://folksy-productively-delaine.ngrok-free.dev/mcp
+✅ Region: Europe (eu)
+✅ Account: willyxeno9@gmail.com (Free Plan)
+✅ ALL ERRORS FIXED!
+
+CRITICAL: ngrok MUST use --host-header flag:
+  ngrok http 8000 --host-header="localhost:8000"
+
+Without this flag, you'll get "421 Misdirected Request" errors!
+
+========================================
+PYTHON VERSION:
+========================================
+
+Active: Python 3.12.7
+Available:
+- Python 3.14.2
+- Python 3.13
+- Python 3.12 (64-bit) ← ACTIVE
+- Python 3.10 (64-bit)
+
+========================================
+
+⚠️  IMPORTANT: Keep both terminal windows open!
+
+To stop: Run STOP_DEMO.bat or press Ctrl+C in both terminals
+
+========================================

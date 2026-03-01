@@ -1,0 +1,64 @@
+🌐 Your ngrok Public URL
+================================
+
+✅ ngrok is RUNNING!
+
+Your Public URL:
+https://folksy-productively-delaine.ngrok-free.dev
+
+Local Server:
+http://localhost:3000
+
+ngrok Web Interface:
+http://127.0.0.1:4040
+
+================================
+NEXT STEPS:
+================================
+
+1. Open Mistral Le Chat:
+   https://chat.mistral.ai
+
+2. Go to Settings (gear icon)
+
+3. Click "MCP Servers"
+
+4. Click "Add Server"
+
+5. Fill in:
+   Name: Blaxel Fleet Commander
+   URL: https://folksy-productively-delaine.ngrok-free.dev
+
+6. Click "Save"
+
+7. Refresh the page
+
+8. Try this command:
+   "List my available tools"
+
+================================
+STATUS:
+================================
+
+✅ MCP Server: RUNNING (port 3000)
+✅ ngrok Tunnel: RUNNING
+✅ Public URL: Active
+✅ Region: Europe (eu)
+✅ Account: willyxeno9@gmail.com (Free Plan)
+
+================================
+PYTHON VERSION:
+================================
+
+Active: Python 3.12.7
+Available versions:
+- Python 3.14.2
+- Python 3.13
+- Python 3.12 (64-bit) ← ACTIVE
+- Python 3.10 (64-bit)
+
+================================
+
+Keep this window open while using Mistral Le Chat!
+
+To stop: Run STOP_DEMO.bat
